@@ -1,0 +1,89 @@
+@media (max-width: 1024px) {
+  .search-area {
+    max-width: 480px;
+  }
+
+  .logo-text {
+    display: none;
+  }
+
+  .logo-area {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 4px;
+  }
+
+  .search-area {
+    max-width: none;
+    height: 40px;
+  }
+
+  .profile-actions-area {
+    display: none;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 12px 8px 32px;
+  }
+
+  body.sidebar-expanded .content {
+    margin-left: 0;
+  }
+
+  .sidebar {
+    width: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .sidebar.sidebar-hover,
+  body.sidebar-expanded .sidebar {
+    width: 280px;
+    z-index: 35;
+  }
+
+  body.sidebar-expanded .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 64px 0 0 0;
+    background: rgba(0, 0, 0, 0.32);
+    z-index: 14;
+  }
+
+  .notes {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .inactive-form,
+  .form-container {
+    margin: 16px 8px;
+  }
+
+  .form-actions .icons .tooltip:nth-child(n + 6) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .settings-area .tooltip:nth-child(2) {
+    display: none;
+  }
+
+  .notes {
+    grid-template-columns: 1fr;
+  }
+
+  .note {
+    width: 100%;
+  }
+
+  .search-area input::placeholder {
+    font-size: 14px;
+  }
+}

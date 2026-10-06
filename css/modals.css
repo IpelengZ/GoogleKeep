@@ -1,0 +1,84 @@
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 50;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.modal.open-modal {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  width: min(600px, 100%);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px 0 rgba(60, 64, 67, 0.3),
+    0 4px 8px 3px rgba(60, 64, 67, 0.15);
+  padding: 16px 16px 8px;
+}
+
+.labels-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 55;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.labels-content {
+  background: #fff;
+  width: min(360px, 100%);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.labels-content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.label-add-row {
+  display: flex;
+  gap: 8px;
+}
+
+.label-add-row input {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #dadce0;
+  padding: 8px 0;
+  font-size: 14px;
+  background: transparent;
+  color: inherit;
+}
+
+#label-list {
+  list-style: none;
+  margin: 16px 0;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+#label-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+#label-list button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5f6368;
+}
